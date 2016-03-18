@@ -1,0 +1,75 @@
+/* app css stylesheet */
+body{
+  width: auto;
+  height: auto;
+  opacity: 1;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+
+body:after{
+  opacity: 0.4;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.wrapper {
+  width: 90%;
+  min-height: 100%;
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-icons {
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  min-height: calc(50vh - 120px);
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-text {
+  color: whitesmoke;
+}
+
+h4>a{
+  color: #000011;
+}
+
+.acadProject {
+  color: whitesmoke;
+}

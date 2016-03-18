@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myResume" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myResume" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myResume" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myResume" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Prashanth Naika</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/styles/app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="../bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+  <ul class="nav nav-tabs wrapper">
+    <li role="presentation"><a href="#/introduction">INTRODUCTION</a></li>
+    <li role="presentation"><a href="#/education">EDUCATION</a></li>
+    <li role="presentation"><a href="#/experience">EXPERIENCE</a></li>
+    <li role="presentation"><a href="#/technical-skills">TECHNICAL SKILLS</a></li>
+    <li role="presentation"><a href="#/acadamic-projects">ACADEMIC PROJECTS</a></li>
+    <li role="presentation"><a href="#/others">OTHERS</a></li>
+  </ul>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view class="wrapper"></div>
+  <my-footer></my-footer>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="features/introduction/introduction.js"></script>
+  <script src="features/education/education.js"></script>
+  <script src="features/technical-skills/technical-skills.js"></script>
+  <script src="features/acadamic-projects/acadamic-projects.js"></script>
+  <script src="features/others/others.js"></script>
+  <script src="features/experience/experience.js"></script>
+  <script src="components/footer/footer-directive.js"></script>
+  <script src="components/footer/footer-controller.js"></script>
+
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
