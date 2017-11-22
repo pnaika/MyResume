@@ -11,6 +11,13 @@ body:after{
   opacity: 0.4;
 }
 
+.pro-pic {
+  width: auto;
+  height: auto;
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
